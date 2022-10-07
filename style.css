@@ -8,7 +8,7 @@
     font-family: 'Spartan',sans-serif;
   }
  html::-webkit-scrollbar{
-    width: 0.9rem;
+    width: 0.7rem;
     height: auto;
 }
 
@@ -17,8 +17,8 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:#04baae;;
-    border-radius: 0.5rem;
+    background:#cdd4f8;;
+    border-radius: 0.1rem;
 }
   
   #header{
@@ -554,7 +554,9 @@ html::-webkit-scrollbar-thumb{
         #blog .blog-box{
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 120%;
+        position: relative;
+        padding-bottom: 90px;
         }
            #blog .blog-img{
         margin-right: 40px;
@@ -593,7 +595,236 @@ html::-webkit-scrollbar-thumb{
 
           background-color: #088178;
           }
-      @media (max-width:799px) {
+          #blog .blog-box h1{
+            position:absolute;
+            top:-44px;
+            left: 0;
+            font-size: 70px;
+            font-weight:700;
+            color:#c9cbce;
+            z-index: -9;/* use for number behind*/
+          }
+         /* about section */
+         #page-header.about-header{
+        background-image: url("img/about/banner.png");
+         }
+         #about-head{
+          display: 100%;
+          align-items: center;
+          
+         }
+         #about-head div{
+          padding-left: 40px;
+         }
+         #about-head img{
+          width: 50%;
+          height: auto;
+         }
+         #about-app{
+          text-align: center;
+         }
+          #about-app .video{
+        width: 70%;
+        height: 100%;
+        margin: 30px auto 0 auto;
+         }
+          #about-app .video video{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+         }
+         /*contact page*/
+         #contact-details{
+          display: flex;
+          align-items:center;
+          justify-content: space-between;
+         }
+         #contact-details .details{
+              width: 40%;
+            }
+         #contact-details .details span,
+          #form-details form span{
+             font-size: 12px;
+          }
+         #contact-details .details h2,
+          #form-details form h2{
+
+             font-size: 26px;
+             line-height: 35px;
+             padding: 20px 0; 
+            }
+         #contact-details .details h3{
+
+             font-size: 16px;
+             padding-bottom: 15px; 
+            }
+         #contact-details .details li{
+              list-style:none;
+              display: flex;
+              padding: 10px 0;
+            }
+         #contact-details .details li i{
+             font-size: 14px;
+             padding-right: 22px;
+            }
+              #contact-details .details li p{
+             margin:0;
+             font-size: 14px;
+            }
+            #contact-details .map{
+              width:55%;
+              height: 400px;
+            }
+              #contact-details .map iframe{
+            width: 100%;
+            height: 100%;
+            }
+            #form-details{
+              display: flex;
+              justify-content: space-between;
+              margin: 30px;
+              padding: 80px;
+              border: 1px solid #e1e1e1;
+            }
+            #form-details form{
+              width: 60%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+          
+            }
+             #form-details form input,
+             #form-details form textarea{
+              width: 100%;
+              padding: 12px 15px;
+              outline:none;
+              margin-bottom: 20px;
+              border: 1px solid #e1e1e1;
+            
+            
+             }
+             #form-details form button{
+              background-color: #088178;
+              color: #fff;
+              margin-bottom: 20px;
+              margin-left: 20px;
+             }
+              #form-details .people div{
+              padding-bottom: 25px;
+              display: flex;
+              align-items:flex-start;
+              
+            }
+            #form-details .people div img{
+              width: 65px;
+              height: 65px;
+              object-fit: cover;
+              margin-right: 15px;
+              
+            }
+             #form-details .people div p{
+           margin: 0; 
+           font-size:13px ;
+           line-height: 25px;
+           
+            }
+             #form-details .people div p span{
+              display: block;
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+            }
+            /*cart page*/
+            #cart table{
+              width: 100%;
+              border-collapse: collapse;
+              table-layout: fixed;
+              white-space: nowrap;
+
+            }
+              #cart table img{
+                width: 70%;
+              }
+                #cart table td:nth-child(1){
+                  width: 100px;
+                  text-align: center;
+                }
+                 #cart table td:nth-child(2){
+                  width: 150px;
+                  text-align: center;
+                }
+                 #cart table td:nth-child(3){
+                  width:250px;
+                  text-align: center;
+                }
+                 #cart table td:nth-child(4),
+                 #cart table td:nth-child(5),
+                  cart table td::nth-child(6){
+                  width: 150px;
+                  text-align: center;
+                }
+                #cart table td:nth-child(5) input{
+                  width: 70px;
+                  padding: 10px 5px 10px 15px;
+                }
+                #cart table thead{
+                  border: 1px solid #e2e9e1;
+                  border-left: none;
+                  border-right: none;
+                }
+                  #cart table thead td{
+                  font-weight: 700;
+                  text-transform:uppercase ;
+                  font-size: 13px;
+                  padding: 18px 0;
+
+                  }
+                  #cart-add{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                  }
+                  #coupon{
+                   width:50%;
+                   margin-bottom: 30px;
+                  }
+                  #coupon h3,
+                  #subtotal h3{
+                    padding-bottom: 15px;
+                  }
+                  #coupon button,
+                  #subtotal button{
+                    background-color: #088178;
+                    color: #fff;
+                    padding: 12px 20px;
+                  }
+                  #coupon input{
+                    padding: 10px 20px;
+                    outline:none;
+                    width: 60%;
+                    margin-right: 10px;
+                    border: 1px,solid #e2e9e1;
+
+                  }
+                  #subtotal{
+                    width: 50%;
+                    margin-bottom: 30px;
+                    border: 1px solid #e2e9e1;padding: 30px;;
+                  }
+                  #subtotal table{
+                    border-collapse: collapse;
+                    width: 100%;
+                    margin-bottom: 20px;
+                  }
+                  #subtotal table td{
+                    width: 50%;
+                    border: 1px solid #e2e9e1;
+                    padding: 10px;
+                    font-size: 13px;
+
+                  }
+
+            @media (max-width:799px) {
         .section-p1{
           padding: 40px 80px;
         }
@@ -674,13 +905,29 @@ html::-webkit-scrollbar-thumb{
    #newsletter .form{
     width: 70%;
    }
-}
-@media (max-width:477) {
+   /*contact page*/
+   #form-details{
+    padding: 40px;
+   }
+   #form-details form{
+    width: 50%;
+   }
+   #cart{
+    overflow-x: auto;
+   }
+ 
+   }
+  
+   
+  
+     @media (max-width:477px){
   .section-p1{
     padding: 20px;
   }
   #header{
     padding: 10px 30px;
+
+    
   }
   h1{
     font-size: 38px;
@@ -691,7 +938,7 @@ html::-webkit-scrollbar-thumb{
 
 #hero{
   padding:0 20px;
-  background-position: 55%;
+  background-position: 54%;
 }
 #features{
   justify-content:space-between;
@@ -740,10 +987,73 @@ footer .copyright{
 #prodetails .single-pro-details{
   width: 100%;
 }
+#blog{
+  padding: 100px 20px 0 20px;
 }
-  
+#blog .blog-img{
+  width: 100%;
+  margin-right: 0px;
+}
+#blog .blog-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+#blog .blog-details{
+  width: 100%;
+}
+/*about page in mobile*/
+#about-head div{
+  flex-direction: column;
+  padding-left: 0;
+}
+#about-head img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+#about-app .video{
+  width: 100%;
 
+}
+/**/
+#contact-details{
+  flex-direction: column;
+}
+#contact-details .details{
+  width: 100%;
+  margin-bottom: 30px;
+}
+#contact-details .map{
+  width: 100%;
+}
+#form-details {
+  margin: 10px;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+#form-details form{
+width: 100%;
+margin-bottom: 30px;
 
+}
+/* cart page*/
+#cart-add{
+  flex-direction: column;
+}
+#coupon{
+  width: 100%;
+}
+#subtotal{
+  width: 100%;
+  padding: 20px;
+}
+}
+
+@media(max-width:670px){
+ #hero{
+ }
+}
 
 
 
