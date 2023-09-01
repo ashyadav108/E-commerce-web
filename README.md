@@ -2,7 +2,7 @@
 
 The E-Commerce Website is a modern online shopping platform with multiple pages that provide various functionalities and features.
 
-![Git-user Detective Preview](./img/Preview.png)
+![E-commerce website Preview](./img/Preview.png)
 
 ## Table of Contents
 
